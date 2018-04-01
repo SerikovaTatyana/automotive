@@ -1,7 +1,33 @@
+@charset "UTF-8";
 @import url(normalize.css);
 @import url(fonts.css);
 html {
   font-size: 20px; }
+
+.btn {
+  color: #fff;
+  background-color: #c62314;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 14px 0px;
+  border-radius: 5px; }
+
+.btn-blue {
+  background-color: #130e27; }
+
+.btn-red {
+  background-color: #c62314; }
+
+.title-section {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin: 2.4rem 0px;
+  display: block; }
+
+.wrap-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 header {
   background-image: url("../img/bg-head.png");
@@ -19,7 +45,9 @@ header {
     font-family: 'QuiteChocolatey', sans-serif;
     font-size: 40px;
     color: #fff;
-    font-size: 4.4rem; }
+    font-size: 4.4rem;
+    margin: 20px 0px;
+    display: block; }
   header #menu-btn {
     display: none; }
   header .menu-wrap {
@@ -28,7 +56,7 @@ header {
     text-align1: right;
     position: absolute;
     right: 0px;
-    top: -60px; }
+    top: -100px; }
     header .main-menu li {
       display: inline-block; }
     header .main-menu a {
@@ -39,3 +67,199 @@ header {
       header .main-menu a:hover {
         background-color: #130e27;
         border-radius: 5px; }
+  header .info-header {
+    margin1: 5rem 0px;
+    margin-top: 5rem; }
+  header h1 {
+    font-size: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #130e27;
+    line-height: 4rem;
+    margin1: 2rem 0px;
+    margin1: 64px 0px;
+    margin: 30px 0px; }
+    header h1 span {
+      color: #fff; }
+  header p {
+    font-family: 'PTSerifRegular', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4rem; }
+  header .wrap-form {
+    min-height1: 500px;
+    min-height: 442px;
+    min-width: 400px;
+    position: relative; }
+  header .main-form {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 24px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px #272020;
+    text-align: center;
+    margin-top1: 34px;
+    position: absolute;
+    top1: 44px;
+    top: 30px;
+    /*
+		.block-checkbox {
+			width: 18px;
+			height: 18px;
+			border-radius: 5px;
+			background-color1: #eeeeee;
+			background-color: red;
+			display: inline-block;
+
+			margin: 0px 20px -1px -20px;
+*/
+    /*
+			&:before {
+				content: "";
+				width: 18px;
+				height: 18px;
+				position: absolute;
+				background-image: url('../img/icons8-галочка-50.png');
+				background-position: center;
+				background-size: 100%;
+				left: 0px;
+				
+			}
+
+		}
+*/ }
+    header .main-form p {
+      font-size: 1.1rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #130e27; }
+    header .main-form input[type="text"] {
+      width: 100%;
+      background-color: #eeeeee;
+      padding: 12px;
+      color: #b5b5b5;
+      font-size: 1rem;
+      font-family: 'PTSerifRegular', sans-serif;
+      border: none;
+      margin: 8px 0px;
+      border-radius: 5px; }
+    header .main-form .none-checkbox {
+      display: none; }
+    header .main-form label {
+      font-size: 1rem;
+      font-family: 'PTSerifRegular', sans-serif;
+      cursor: pointer;
+      position: relative;
+      display: inline-block; }
+      header .main-form label:after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 5px;
+        background-color: #eeeeee;
+        top: 5px;
+        left: -28px; }
+    header .main-form input:checked + label {
+      display1: block; }
+      header .main-form input:checked + label:before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        background-image: url("../img/icons8-галочка-50.png");
+        background-position: center;
+        background-size: 100%;
+        left: -28px;
+        top: 5px;
+        z-index: 10; }
+    header .main-form .btn {
+      width: 100%;
+      margin-top: 24px; }
+
+.wrap-service {
+  background-color: #fff; }
+  .wrap-service .big-text {
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 2.5rem;
+    color: #c62314;
+    margin: 30px 0px; }
+    .wrap-service .big-text span {
+      color: #130e27; }
+  .wrap-service .service-inco {
+    width: 180px;
+    height: 160px;
+    background-color1: red;
+    background-image: url("../img/service-inco.png");
+    background-position: -46px -18px; }
+  .wrap-service .wrap-flex .service {
+    background-color1: yellow;
+    text-align: center;
+    width: 180px;
+    margin: 20px 0px; }
+  .wrap-service .wrap-flex .service:nth-child(1) .service-inco {
+    background-position: -46px -18px; }
+  .wrap-service .wrap-flex .service:nth-child(2) .service-inco {
+    background-position: -330px -18px; }
+  .wrap-service .wrap-flex .service:nth-child(3) .service-inco {
+    background-position: -606px -14px; }
+  .wrap-service .wrap-flex .service:nth-child(4) .service-inco {
+    background-position: 218px -18px; }
+  .wrap-service .wrap-flex p {
+    font-size: 1rem;
+    font-family: 'PTSerifRegular', sans-serif; }
+
+.wrap-story {
+  background-color: #130e27; }
+  .wrap-story p {
+    color: #fff;
+    font-family: 'PTSerifRegular', sans-serif;
+    font-size: 1rem; }
+  .wrap-story .btn {
+    width: 100%;
+    margin: 1.2rem 0px; }
+
+.wrap-rate {
+  background-color: #efefef;
+  text-align: center; }
+  .wrap-rate .btn-blue,
+  .wrap-rate .btn-red {
+    width: 100%; }
+  .wrap-rate .rate-once {
+    background-color: #ffffff;
+    max-width1: 318px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'PTSerifRegular', sans-serif;
+    padding: 10px 56px 0px 56px;
+    padding-top1: 10px;
+    padding-bottom1: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 320px;
+    position: relative;
+    overflow: hidden; }
+    .wrap-rate .rate-once .sile {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url("../img/sile.png");
+      width: 110px;
+      height: 110px;
+      background-repeat: no-repeat; }
+      .wrap-rate .rate-once .sile p {
+        transform: rotate(-48deg);
+        position: absolute;
+        top: 12px; }
+    .wrap-rate .rate-once p {
+      margin: 0px;
+      padding: 10px 0px; }
+    .wrap-rate .rate-once .prise {
+      color: #c62314;
+      font-size: 3rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold; }
+    .wrap-rate .rate-once ul {
+      padding: 0px; }
+    .wrap-rate .rate-once li {
+      list-style: none; }
+  .wrap-rate .title-section {
+    color: #130e27; }
