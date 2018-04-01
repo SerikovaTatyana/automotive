@@ -1,0 +1,73 @@
+@import url(normalize.css);
+@import url(fonts.css);
+
+$blue: #130e27;
+$red: #c62314;
+
+html {
+	font-size: 20px;
+}
+
+header {
+
+	background-image: url('../img/bg-head.png');
+
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+
+	.bg-header {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background: rgba(221,34,17,0.8);
+	}
+
+	.logo {
+		font-family: 'QuiteChocolatey', sans-serif;
+		font-size: 40px;
+		color: #fff;
+		font-size: 4.4rem;
+	}
+
+
+	#menu-btn {
+		display: none;
+	}
+
+	.menu-wrap {
+		position: relative;
+	}
+
+	.main-menu {
+
+		text-align1: right;
+		position: absolute;
+		right: 0px;
+		top: -60px;
+
+		li {
+			display: inline-block;
+		}
+
+		a {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 0.9rem;
+			color: #fff;
+			padding: 10px 12px;
+
+			&:hover {
+				background-color: $blue;
+				border-radius: 5px;
+			}
+		}
+
+		
+			
+		
+	}
+
+}
+
