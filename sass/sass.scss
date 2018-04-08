@@ -45,15 +45,29 @@ html {
 }
 
 
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.bg-img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+}
 
 header {
 
-	background-image: url('../img/bg-head.png');
+	background-image1: url('../img/bg-head.png');
 
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: relative;
+	overflow1: hidden;
+	background-color: #b91e10;
 
 	.bg-header {
 		position: absolute;
@@ -61,7 +75,8 @@ header {
 		left: 0px;
 		right: 0px;
 		bottom: 0px;
-		background: rgba(221,34,17,0.8);
+		background1: rgba(221,34,17,0.8);
+		overflow: hidden;
 	}
 
 	.logo {
@@ -74,8 +89,14 @@ header {
 	}
 
 
-	#menu-btn {
+	.menu-btn {
 		display: none;
+		width: 40px;
+		height: 40px;
+		background-image: url('../img/menu-button_icon-icons.png');
+		background-color: transparent; 
+		border: none;
+		background-size: 100%;
 	}
 
 	.menu-wrap {
@@ -343,8 +364,14 @@ header {
 
 	.btn {
 		width: 100%;
-		margin: 1.2rem 0px;
+		margin: 1.2rem auto;
+		max-width: 255px;
+		display: block;
 	}
+
+	
+
+
 }
 
 
@@ -419,4 +446,462 @@ header {
 	}
 
 
+}
+
+
+.testim-wrap {
+
+	background-color: #fff;
+	padding: 5rem;
+
+
+
+	.title-section {
+		text-align: center;
+		margin: 1rem 0px;
+	}
+
+	.testim {
+
+		.title-section {
+			color: $blue;
+		}
+
+
+	
+		.dj-info:nth-child(2n) .dj-text:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #efefef;
+			background-color1: red;
+			z-index: 1;
+			width1: 410px;
+			width: 434px;
+
+			left: -24px;
+
+
+
+
+		}
+
+		
+		.dj-info:nth-child(2n) {
+			p {
+				color: #c62314;
+			}
+
+			.strong {
+				color: #130e27;
+			}
+		}
+
+
+/*
+		.dj-info:nth-child(2n) {
+
+			background-color: red;
+
+		}
+*/		
+
+	}
+
+	
+	
+	.dj-info {
+
+		position: relative;
+		padding-right1: 50px;
+		max-width1: 470px;
+		padding-left: 10px;
+		background-color1: yellow;
+		padding-left: 25px;
+		padding-bottom: 1.5rem;
+
+		p {
+			color: #161616;
+			font-size: 1rem;
+			font-family: 'PTSerifRegular', sans-serif;
+			float1: left;
+
+			position: relative;
+
+			z-index: 20;
+		}
+
+		.strong {
+			color: #130e27;
+			font-size: 1rem;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.dj-img {
+			width: 104px;
+			height: 104px;
+			overflow: hidden;
+			border-radius: 50%;
+			box-shadow: 0px 0px 10px #A1A1A1;
+			float1: right;
+			align-self: center;
+			margin1: auto;
+
+			position1: absolute;
+			right1: 0px;
+			top1: calc(50% - 52px);
+			
+			position: relative;
+			z-index: 20;
+
+
+		}
+
+
+		.dj-text {
+			max-width: 360px;
+			float1: left;
+			position: relative;
+
+
+		}
+
+
+		
+
+
+		
+	}
+
+
+	
+
+
+	.gallery-wrap {
+
+		text-align1: center;
+		padding-bottom: 10px;
+
+		.title-section {
+			color: $red;
+			text-align1: left;
+		}
+
+
+		.flex {
+			justify-content: center;
+		}
+
+
+		.a-gallery {
+			width: 100%;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		a {
+			text-decoration: underline;
+			font-size: 1rem;
+			color: #130e27;
+		}
+	}
+
+	.gallery-img {
+
+		width: 104px;
+		height: 104px;
+		overflow: hidden;
+		border-radius: 50%;
+		box-shadow: 0px 0px 10px #A1A1A1;
+		margin: 18px 18px;
+
+		
+
+	}
+
+
+	.gallery {
+		padding: 17px 0px;
+	}
+
+	
+
+
+
+
+}
+
+
+
+footer {
+	background-color: $blue;
+	padding1: 3rem 0px;
+	padding: 2rem 0px;
+
+	p {
+		font-family: 'PTSerifRegular', sans-serif;
+		font-size: 1rem;
+		color: #fff;
+	}
+
+	a {
+		color: #c62314;
+	}
+
+	.fot-logo {
+		a {
+			font-family: 'QuiteChocolatey', sans-serif;
+			color: #c62314;
+			font-size: 3.2rem;
+			display: block;
+
+			margin: -10px 0px;
+		}
+	}
+}
+
+
+
+// Мобильная верстка
+@media only screen and (max-width: 1200px) {
+
+	html {
+		font-size: 18px;	
+	}
+	
+	header .info-header {
+	   
+	    margin-top: 4rem;
+	}
+
+
+
+
+	.testim-wrap {
+
+	    padding: 0px;
+
+	}
+
+
+
+
+	.wrap-flex {
+		justify-content: center;
+	}
+
+
+	.wrap-rate .rate-once {
+		margin: 20px 10px;
+	}
+
+
+	.testim-wrap .testim .dj-info:nth-child(2n) .dj-text::before {
+		display: none;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+	
+	html {
+		font-size: 16px;	
+	}
+
+	header .info-header {
+		margin-top: 1rem;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 992px){
+
+	header .main-menu {
+		display: none;
+		top: 60px;
+		background-color: #d33021;
+		width: 100%;
+		text-align: center;
+		z-index: 999;
+
+		ul {
+			padding: 0px;
+		}
+
+		li {
+			display: block;
+			padding: 10px 0px;
+
+		}
+	}
+
+	header .main-menu a:hover {
+		background-color: transparent;
+	}
+
+	header .menu-btn {
+		display: block;
+		float: right;
+	}
+
+	header .logo {
+		float: left;
+	}
+
+	
+
+
+	header .main-form {
+		position: relative;
+		margin: auto;
+	}
+
+	
+
+	.testim-wrap .dj-info {
+		padding: 0px;
+	}
+
+	.flex {
+	    justify-content: center;
+	}
+
+
+
+	header .menu-btn {
+	    margin-top: 20px;
+
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+	html {
+		font-size1: 14px;
+	}
+
+	header h1 {
+		font-size: 3.5rem;
+		margin: 10px 0px;
+	}
+
+}
+
+
+@media only screen and (max-width: 640px){
+	header h1 {
+		font-size: 3rem;
+	}
+
+
+	header .logo {
+
+	    font-size: 3rem;
+	    margin: 10px 0px;
+	}
+}
+
+@media only screen and (max-width: 580px){
+	header h1 {
+		font-size: 2rem;
+		line-height: 1rem;
+	}
+}
+
+
+@media only screen and (max-width: 533px){
+	header h1 {
+    	font-size: 1.8rem;
+    	margin: 2px 0px;
+	}
+
+	header .wrap-form {
+		min-width: 330px;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 414px){
+	
+	header h1 {
+    	font-size: 1.4rem;
+    	line-height: 2rem;
+    	
+	}
+
+	header .logo {
+   
+    	margin: 2px 0px;
+	}
+
+	header .info-header {
+    	margin-top: 0.2rem;
+	}
+
+	header p {
+		margin: 2px 0px;
+	}
+
+	header .wrap-form {
+		min-width: 310px;
+	}
+
+	footer {
+ 
+    	text-align: center;
+	}
+
+
+
+	header .wrap-form {
+		min-width: 100%;
+	}
+
+	header .main-form {
+		min-width: 100%;
+	}
+
+	.title-section {
+		font-size: 2rem;
+	}
+
+		
+	header .menu-btn {
+	    margin-top: 10px;
+
+	}
+
+
+}
+
+
+@media only screen and (max-width: 340px){
+	
+	header .main-form label::after {
+		left: -20px;
+	}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 993px){
+	header .main-menu {
+		display: block !important;
+	}
 }
