@@ -47,7 +47,9 @@ header {
   background-size: 100%;
   position: relative;
   overflow1: hidden;
-  background-color: #b91e10; }
+  background-color1: #b91e10;
+  background-image: url("../img/bg-head-repead2.png");
+  background-repeat: repeat-y; }
   header .bg-header {
     position: absolute;
     top: 0px;
